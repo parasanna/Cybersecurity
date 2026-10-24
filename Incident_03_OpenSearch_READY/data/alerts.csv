@@ -1,0 +1,14 @@
+﻿alert_id,timestamp,rule_name,severity,host,user,src_ip,dst_ip,description
+A001,2026-12-02T06:25:10Z,Backup file burst,high,FS01,svc_backup,10.40.20.40,10.40.20.11,Scheduled backup copied many files
+A007,2026-12-02T07:41:25Z,VPN login from unusual country,high,VPN01,m.ralli,203.0.113.155,10.40.0.5,Successful login inconsistent with user baseline
+A008,2026-12-02T07:46:35Z,Encoded PowerShell activity,high,WS-077,m.ralli,10.40.10.77,,Suspicious encoded command execution
+A009,2026-12-02T07:48:12Z,Potential malware download heuristic,high,WS-077,m.ralli,10.40.10.77,198.51.100.10,Approved finance software update CDN
+A010,2026-12-02T07:49:55Z,Credential access behavior,high,WS-077,m.ralli,10.40.10.77,,Sensitive credential material accessed
+A011,2026-12-02T07:52:38Z,Unusual SMB logon to server,medium,FS01,m.ralli,10.40.10.77,10.40.20.11,New network logon from finance workstation
+A012,2026-12-02T07:53:15Z,Remote service creation,high,FS01,m.ralli,10.40.10.77,10.40.20.11,Temporary service created remotely
+A013,2026-12-02T07:55:45Z,Unusual east-west authentication,medium,HR-WS12,m.ralli,10.40.20.11,10.40.10.112,Unexpected path from file server to HR workstation
+A014,2026-12-02T07:57:05Z,Mass file modification,critical,HR-WS12,m.ralli,,,Rapid user-document modifications
+A015,2026-12-02T07:57:16Z,Mass file modification,critical,FS01,m.ralli,,,Rapid shared-folder modifications
+A016,2026-12-02T07:57:29Z,File extension anomaly,critical,WS-077,m.ralli,,,Unexpected file rename pattern
+A017,2026-12-02T07:58:44Z,Failed privileged target access,high,DC01,m.ralli,10.40.20.11,10.40.0.10,Attempted access to DC01 denied
+A018,2026-12-02T08:05:20Z,Service creation on server,medium,FS01,it.admin,10.40.50.20,10.40.20.11,Incident-response collection agent installed

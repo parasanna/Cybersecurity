@@ -1,0 +1,50 @@
+services:
+  opensearch:
+    image: opensearchproject/opensearch:3.9.0
+    container_name: cyberlab-opensearch-03
+    environment:
+      - discovery.type=single-node
+      - bootstrap.memory_lock=true
+      - DISABLE_SECURITY_PLUGIN=true
+      - OPENSEARCH_JAVA_OPTS=-Xms512m -Xmx512m
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    ports:
+      - "9200:9200"
+    volumes:
+      - opensearch-data:/usr/share/opensearch/data
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://localhost:9200/_cluster/health >/dev/null || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+
+  dashboards:
+    image: opensearchproject/opensearch-dashboards:3.9.0
+    container_name: cyberlab-dashboards-03
+    ports:
+      - "5601:5601"
+    environment:
+      - 'OPENSEARCH_HOSTS=["http://opensearch:9200"]'
+      - DISABLE_SECURITY_DASHBOARDS_PLUGIN=true
+    depends_on:
+      opensearch:
+        condition: service_healthy
+
+  bootstrap:
+    image: curlimages/curl:latest
+    container_name: cyberlab-bootstrap-03
+    depends_on:
+      opensearch:
+        condition: service_healthy
+      dashboards:
+        condition: service_started
+    volumes:
+      - ./data:/data:ro
+      - ./bootstrap:/bootstrap:ro
+    entrypoint: ["/bin/sh", "/bootstrap/bootstrap.sh"]
+
+volumes:
+  opensearch-data:

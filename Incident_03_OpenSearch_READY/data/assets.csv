@@ -1,0 +1,8 @@
+﻿asset_id,hostname,ip,role,zone,owner
+VPN01,VPN01,10.40.0.5,VPN gateway,DMZ,IT
+DC01,DC01,10.40.0.10,Domain controller,Core,IT
+WS-077,WS-077,10.40.10.77,Finance workstation,User-LAN,Marina Ralli
+FS01,FS01,10.40.20.11,File server,Server,IT
+HR-WS12,HR-WS12,10.40.10.112,HR workstation,User-LAN,HR
+BACKUP01,BACKUP01,10.40.20.40,Backup server,Server,IT
+SCAN01,SCAN01,10.40.50.9,Authorized vulnerability scanner,Security,SOC

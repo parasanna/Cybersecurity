@@ -1,0 +1,5 @@
+﻿user_id,display_name,department,role,privilege,normal_workstation,mfa
+m.ralli,Marina Ralli,Finance,Analyst,Standard,WS-077,Yes
+it.admin,IT Admin,IT,Administrator,Privileged,ADMIN01,Yes
+svc_backup,Backup Service,IT,Service account,Service,BACKUP01,
+a.dimas,Alex Dimas,HR,HR Officer,Standard,HR-WS12,Yes

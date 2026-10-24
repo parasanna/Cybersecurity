@@ -1,0 +1,41 @@
+{
+  "mappings": {
+    "properties": {
+      "alert_id": {
+        "type": "keyword"
+      },
+      "timestamp": {
+        "type": "date"
+      },
+      "rule_name": {
+        "type": "keyword"
+      },
+      "severity": {
+        "type": "keyword"
+      },
+      "host": {
+        "type": "keyword"
+      },
+      "user": {
+        "type": "keyword"
+      },
+      "src_ip": {
+        "type": "ip",
+        "ignore_malformed": true
+      },
+      "dst_ip": {
+        "type": "ip",
+        "ignore_malformed": true
+      },
+      "description": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 1024
+          }
+        }
+      }
+    }
+  }
+}

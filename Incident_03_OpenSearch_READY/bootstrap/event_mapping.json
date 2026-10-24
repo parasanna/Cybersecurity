@@ -1,0 +1,83 @@
+{
+  "mappings": {
+    "properties": {
+      "event_id": {
+        "type": "keyword"
+      },
+      "timestamp": {
+        "type": "date"
+      },
+      "source_type": {
+        "type": "keyword"
+      },
+      "host": {
+        "type": "keyword"
+      },
+      "user": {
+        "type": "keyword"
+      },
+      "src_ip": {
+        "type": "ip",
+        "ignore_malformed": true
+      },
+      "dst_ip": {
+        "type": "ip",
+        "ignore_malformed": true
+      },
+      "dst_port": {
+        "type": "integer"
+      },
+      "protocol": {
+        "type": "keyword"
+      },
+      "event_code": {
+        "type": "keyword"
+      },
+      "event_name": {
+        "type": "keyword"
+      },
+      "action": {
+        "type": "keyword"
+      },
+      "status": {
+        "type": "keyword"
+      },
+      "severity": {
+        "type": "keyword"
+      },
+      "process_name": {
+        "type": "keyword"
+      },
+      "command_line": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 1024
+          }
+        }
+      },
+      "dns_query": {
+        "type": "keyword"
+      },
+      "bytes_out": {
+        "type": "long"
+      },
+      "geo_country": {
+        "type": "keyword"
+      },
+      "geo_city": {
+        "type": "keyword"
+      },
+      "message": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 1024
+          }
+        }
+      }
+    }
+  }
+}

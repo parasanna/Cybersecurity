@@ -1,0 +1,26 @@
+{"index": {"_index": "cyberlab-incident03-alerts-lite", "_id": "A001"}}
+{"alert_id": "A001", "timestamp": "2026-12-02T06:25:10Z", "rule_name": "Backup file burst", "severity": "high", "host": "FS01", "user": "svc_backup", "src_ip": "10.40.20.40", "dst_ip": "10.40.20.11", "description": "Scheduled backup copied many files"}
+{"index": {"_index": "cyberlab-incident03-alerts-lite", "_id": "A007"}}
+{"alert_id": "A007", "timestamp": "2026-12-02T07:41:25Z", "rule_name": "VPN login from unusual country", "severity": "high", "host": "VPN01", "user": "m.ralli", "src_ip": "203.0.113.155", "dst_ip": "10.40.0.5", "description": "Successful login inconsistent with user baseline"}
+{"index": {"_index": "cyberlab-incident03-alerts-lite", "_id": "A008"}}
+{"alert_id": "A008", "timestamp": "2026-12-02T07:46:35Z", "rule_name": "Encoded PowerShell activity", "severity": "high", "host": "WS-077", "user": "m.ralli", "src_ip": "10.40.10.77", "dst_ip": "", "description": "Suspicious encoded command execution"}
+{"index": {"_index": "cyberlab-incident03-alerts-lite", "_id": "A009"}}
+{"alert_id": "A009", "timestamp": "2026-12-02T07:48:12Z", "rule_name": "Potential malware download heuristic", "severity": "high", "host": "WS-077", "user": "m.ralli", "src_ip": "10.40.10.77", "dst_ip": "198.51.100.10", "description": "Approved finance software update CDN"}
+{"index": {"_index": "cyberlab-incident03-alerts-lite", "_id": "A010"}}
+{"alert_id": "A010", "timestamp": "2026-12-02T07:49:55Z", "rule_name": "Credential access behavior", "severity": "high", "host": "WS-077", "user": "m.ralli", "src_ip": "10.40.10.77", "dst_ip": "", "description": "Sensitive credential material accessed"}
+{"index": {"_index": "cyberlab-incident03-alerts-lite", "_id": "A011"}}
+{"alert_id": "A011", "timestamp": "2026-12-02T07:52:38Z", "rule_name": "Unusual SMB logon to server", "severity": "medium", "host": "FS01", "user": "m.ralli", "src_ip": "10.40.10.77", "dst_ip": "10.40.20.11", "description": "New network logon from finance workstation"}
+{"index": {"_index": "cyberlab-incident03-alerts-lite", "_id": "A012"}}
+{"alert_id": "A012", "timestamp": "2026-12-02T07:53:15Z", "rule_name": "Remote service creation", "severity": "high", "host": "FS01", "user": "m.ralli", "src_ip": "10.40.10.77", "dst_ip": "10.40.20.11", "description": "Temporary service created remotely"}
+{"index": {"_index": "cyberlab-incident03-alerts-lite", "_id": "A013"}}
+{"alert_id": "A013", "timestamp": "2026-12-02T07:55:45Z", "rule_name": "Unusual east-west authentication", "severity": "medium", "host": "HR-WS12", "user": "m.ralli", "src_ip": "10.40.20.11", "dst_ip": "10.40.10.112", "description": "Unexpected path from file server to HR workstation"}
+{"index": {"_index": "cyberlab-incident03-alerts-lite", "_id": "A014"}}
+{"alert_id": "A014", "timestamp": "2026-12-02T07:57:05Z", "rule_name": "Mass file modification", "severity": "critical", "host": "HR-WS12", "user": "m.ralli", "src_ip": "", "dst_ip": "", "description": "Rapid user-document modifications"}
+{"index": {"_index": "cyberlab-incident03-alerts-lite", "_id": "A015"}}
+{"alert_id": "A015", "timestamp": "2026-12-02T07:57:16Z", "rule_name": "Mass file modification", "severity": "critical", "host": "FS01", "user": "m.ralli", "src_ip": "", "dst_ip": "", "description": "Rapid shared-folder modifications"}
+{"index": {"_index": "cyberlab-incident03-alerts-lite", "_id": "A016"}}
+{"alert_id": "A016", "timestamp": "2026-12-02T07:57:29Z", "rule_name": "File extension anomaly", "severity": "critical", "host": "WS-077", "user": "m.ralli", "src_ip": "", "dst_ip": "", "description": "Unexpected file rename pattern"}
+{"index": {"_index": "cyberlab-incident03-alerts-lite", "_id": "A017"}}
+{"alert_id": "A017", "timestamp": "2026-12-02T07:58:44Z", "rule_name": "Failed privileged target access", "severity": "high", "host": "DC01", "user": "m.ralli", "src_ip": "10.40.20.11", "dst_ip": "10.40.0.10", "description": "Attempted access to DC01 denied"}
+{"index": {"_index": "cyberlab-incident03-alerts-lite", "_id": "A018"}}
+{"alert_id": "A018", "timestamp": "2026-12-02T08:05:20Z", "rule_name": "Service creation on server", "severity": "medium", "host": "FS01", "user": "it.admin", "src_ip": "10.40.50.20", "dst_ip": "10.40.20.11", "description": "Incident-response collection agent installed"}
